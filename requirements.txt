@@ -1,0 +1,3 @@
+pip install -U aiogram
+pip install aiogram[redis]
+
