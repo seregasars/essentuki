@@ -11,7 +11,7 @@ import logging
 API_TOKEN = "7557198950:AAEfq3XrNKRO-FUtOcEOKdEMc7IS6tRwdWI"
 
 # Инициализация хранилища с SQLite
-my_storage = SQLStorage('fsm_storage.db', serializing_method='pickle')  # Вы можете использовать 'json' или 'pickle'
+my_storage = SQLStorage('data/fsm_storage.db', serializing_method='pickle')  # Вы можете использовать 'json' или 'pickle'
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(storage=my_storage)  # Передаем хранилище в диспетчер
